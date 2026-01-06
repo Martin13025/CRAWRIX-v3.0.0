@@ -1,1 +1,432 @@
 <!doctype html><html lang="en"><head><meta charset="UTF-8" /><link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link rel="preload" href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" as="style" onload="this.rel='stylesheet'" /><noscript><link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet" /></noscript><script async src="https://www.googletagmanager.com/gtm.js?id=GTM-MHWFS9QR"></script><link rel="icon" type="image/svg+xml" href="/Crawrix.svg" /><meta name="description" content="Crawrix helps with keyword parsing and finding relevant content for better SEO." /><meta name="robots" content="index, follow" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta property="og:title" content="Crawrix — SEO Keyword Parsing Tool" /><meta property="og:description" content="Crawrix helps with keyword parsing and finding relevant content for better SEO." /><meta property="og:type" content="website" /><meta property="og:url" content="https://www.crawrix.com" /><meta property="og:image" content="https://www.crawrix.com/Crawrix.svg" /><meta name="twitter:card" content="summary_large_image" /><meta name="twitter:title" content="Crawrix — SEO Keyword Parsing Tool" /><meta name="twitter:description" content="Crawrix helps with keyword parsing and finding relevant content for better SEO." /><meta name="twitter:image" content="https://www.crawrix.com/Crawrix.svg" /><style>:root{line-height:1.5;color-scheme:dark;background-color:#000;font-synthesis:none;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;--primary-color:#ffff00;--secondary-color:#ffaa00;--background-color:#000;--border-radius:8px;--font-family:"Fira Code", monospace;--transition:0.3s ease}body{font-family:var(--font-family)}.App{margin:10vh auto 0 auto;box-sizing:border-box;max-width:500px;padding:20px;text-align:center;background-color:var(--background-color);border-radius:var(--border-radius);box-shadow:0 4px 6px rgb(255 255 0 / .4);color:var(--primary-color);transition:background-color var(--transition)}.App.aggressive-mode{background-color:#ff5733}.App.aggressive-mode h1,.App.aggressive-mode button{color:#fff}.App.aggressive-mode button{background-color:#e74c3c}hr{border:none;height:3px;background-color:var(--primary-color);margin:20px 0;border-radius:10px}h1{font-size:2rem;margin-bottom:1rem;color:var(--primary-color);text-transform:lowercase;letter-spacing:2px}input[type="text"],button{font-family:var(--font-family);font-size:1rem;border-radius:4px}input[type="text"]{width:80%;padding:10px 10px .6rem 10px;border:1px solid var(--secondary-color);outline:none;background-color:#111;color:var(--primary-color)}input[type="text"]:focus{border-color:var(--primary-color)}input::placeholder{color:#666;opacity:1;font-size:1rem;font-family:inherit}button{background-color:var(--secondary-color);color:#000;padding:10px 20px;border:none;cursor:pointer}button:hover{background-color:var(--primary-color)}button:disabled{background-color:#333;cursor:not-allowed}.result{margin-top:20px;text-align:left;background-color:#111;padding:10px;border-radius:var(--border-radius);word-wrap:break-word;overflow-wrap:break-word;white-space:normal}.result h2,.result h4{margin-bottom:.5rem;text-transform:uppercase;letter-spacing:1px}.result h2{color:var(--primary-color)}.result h4{color:var(--secondary-color)}.result a{color:var(--primary-color);text-decoration:none}.result a:hover{text-decoration:underline}.back-button{margin-top:15px;background-color:#fc0;color:#000;padding:10px 15px;border:none;cursor:pointer}.back-button:hover{background-color:var(--secondary-color)}h2{font-size:1.2rem;color:#ff6;font-family:monospace;background:none;margin-top:.5rem}.modal-overlay{position:fixed;left:0;right:0;top:0;bottom:0;background-color:rgb(0 0 0 / .5);transform:translateY(100%);opacity:0;pointer-events:none;transition:transform 0.8s ease,opacity 0.8s ease;overflow:hidden;z-index:999;align-items:flex-start;padding-top:50px}.modal-overlay.open{transform:translateY(0);opacity:1;pointer-events:auto}.modal-content{position:relative;background:var(--background-color);padding:20px;max-width:600px;width:90%;max-height:80vh;margin:0 auto;border-radius:var(--border-radius);box-shadow:0 0 6px var(--primary-color);overflow-y:auto;box-sizing:border-box}.modal-close-bar{width:50px;height:4px;background-color:#333;margin:0 auto 10px;cursor:pointer;border-radius:2px}.modal-close-bar:hover{background-color:#fffb00}.social-icons{display:flex;gap:15px;margin-top:20px}.social-icons a{display:flex;align-items:center;text-decoration:none;color:#fc0;font-size:18px;transition:color var(--transition)}.social-icons a:hover{color:#01f}.crypto-box{border:2px solid #ffd900;padding:10px;border-radius:4px;display:inline-block;background-color:rgb(255 215 0 / .1);word-break:break-word}.seo-wrapper{margin-top:150px;padding-bottom:60px;min-height:400px;box-sizing:border-box}.seo-description{background-color:#1a1a1a;padding:40px 20px;margin-top:150px;border-top:1px solid var(--primary-color);color:#ddd;font-family:var(--font-family,sans-serif);line-height:1.6;max-width:500px;margin-left:auto;margin-right:auto;border-radius:var(--border-radius);box-shadow:0 0 8px rgb(255 215 0 / .2)}.seo-description h3,.seo-description h4{color:#fc0;margin-top:20px;margin-bottom:10px;font-size:22px}.seo-description p{margin-bottom:16px;font-size:16px}.seo-description .crypto-box{margin-top:10px}.seo-description .social-icons{display:flex;gap:15px;margin-top:20px}.seo-description .social-icons a{display:flex;align-items:center;text-decoration:none;color:#fc0;font-size:18px;transition:color var(--transition)}.seo-description .social-icons a:hover{color:#01f}.footer{position:fixed;bottom:0;width:100%;display:flex;justify-content:center;align-items:center;padding:10px 20px;font-size:14px}.footer-left{position:fixed;left:15px;bottom:10px}.footer-center{position:fixed;bottom:10px;right:10px;font-size:13px;color:#fc0;padding:6px 10px;background-color:rgb(0 0 0 / .6);border-radius:5px;max-width:95vw;z-index:999;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}@media (max-width:768px){.App{padding:15px}h1{font-size:1.5rem}.big-letter{font-size:3rem}.crypto-box{display:block;width:100%;box-sizing:border-box}input[type="text"]{width:90%;margin:0 auto}button{width:auto;padding:10px 15px}.footer{font-size:12px}.modal-content{width:90%;padding:15px;max-height:80vh}.social-icons a{font-size:16px}.result{padding:10px;font-size:.95rem;overflow-wrap:anywhere}.result h2{font-size:1.2rem}.result h4{font-size:1rem}.result a{font-size:.95rem;display:block;word-break:break-word}.footer-center{left:50%;right:auto;transform:translateX(-50%);bottom:8px;text-align:center;white-space:normal;max-width:90vw}}@media (max-width:480px){.App{padding:10px}.crypto-box{display:block;width:100%;box-sizing:border-box}h1{font-size:1.2rem}.big-letter{font-size:2.5rem}input[type="text"]{width:95%;padding:6px;margin:0 auto}button{width:auto;padding:8px 12px}.result{padding:8px}.modal-content{width:90%;padding:12px;max-height:70vh}.footer{font-size:10px}.footer-left,.footer-center{font-size:10px}.social-icons a{font-size:14px}}</style><title>Crawrix</title></head><body><div id="root"></div><script type="module" src="/src/main.tsx"></script><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MHWFS9QR" height="0" width="0" style="display: none; visibility: hidden"></iframe></noscript></body></html>
+<!--<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" as="style"
+        onload="this.rel='stylesheet'" />
+    <noscript>
+        <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet" />
+    </noscript>
+    <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-MHWFS9QR"></script>
+    <link rel="icon" type="image/svg+xml" href="/Crawrix.svg" />
+    <meta name="description"
+        content="Crawrix helps with keyword parsing and finding relevant content for better SEO." />
+    <meta name="robots" content="index, follow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="Crawrix — SEO Keyword Parsing Tool" />
+    <meta property="og:description"
+        content="Crawrix helps with keyword parsing and finding relevant content for better SEO." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.crawrix.com" />
+    <meta property="og:image" content="https://www.crawrix.com/Crawrix.svg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Crawrix — SEO Keyword Parsing Tool" />
+    <meta name="twitter:description"
+        content="Crawrix helps with keyword parsing and finding relevant content for better SEO." />
+    <meta name="twitter:image" content="https://www.crawrix.com/Crawrix.svg" />
+    <style>
+        :root {
+            line-height: 1.5;
+            color-scheme: dark;
+            background-color: #000000;
+            font-synthesis: none;
+            text-rendering: optimizeLegibility;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+
+            --primary-color: #ffff00;
+            --secondary-color: #ffaa00;
+            --background-color: #000;
+            --border-radius: 8px;
+            --font-family: "Fira Code", monospace;
+            --transition: 0.3s ease;
+        }
+        body {
+            font-family: var(--font-family);
+        }
+        .App {
+            margin: 10vh auto 0 auto;
+            box-sizing: border-box;
+            max-width: 500px;
+            padding: 20px;
+            text-align: center;
+            background-color: var(--background-color);
+            border-radius: var(--border-radius);
+            box-shadow: 0 4px 6px rgba(255, 255, 0, 0.4);
+            color: var(--primary-color);
+            transition: background-color var(--transition);
+        }
+        .App.aggressive-mode {
+            background-color: #ff5733;
+        }
+        .App.aggressive-mode h1,
+        .App.aggressive-mode button {
+            color: #fff;
+        }
+        .App.aggressive-mode button {
+            background-color: #e74c3c;
+        }
+        hr {
+            border: none;
+            height: 3px;
+            background-color: var(--primary-color);
+            margin: 20px 0;
+            border-radius: 10px;
+        }
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+            text-transform: lowercase;
+            letter-spacing: 2px;
+        }
+        input[type="text"],
+        button {
+            font-family: var(--font-family);
+            font-size: 1rem;
+            border-radius: 4px;
+        }
+        input[type="text"] {
+            width: 80%;
+            padding: 10px 10px 0.6rem 10px;
+            border: 1px solid var(--secondary-color);
+            outline: none;
+            background-color: #111;
+            color: var(--primary-color);
+        }
+        input[type="text"]:focus {
+            border-color: var(--primary-color);
+        }
+        input::placeholder {
+            color: #666;
+            opacity: 1;
+            font-size: 1rem;
+            font-family: inherit;
+        }
+        button {
+            background-color: var(--secondary-color);
+            color: black;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: var(--primary-color);
+        }
+        button:disabled {
+            background-color: #333;
+            cursor: not-allowed;
+        }
+        .result {
+            margin-top: 20px;
+            text-align: left;
+            background-color: #111;
+            padding: 10px;
+            border-radius: var(--border-radius);
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+            white-space: normal;
+        }
+        .result h2,
+        .result h4 {
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .result h2 {
+            color: var(--primary-color);
+        }
+        .result h4 {
+            color: var(--secondary-color);
+        }
+        .result a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        .result a:hover {
+            text-decoration: underline;
+        }
+        .back-button {
+            margin-top: 15px;
+            background-color: #ffcc00;
+            color: black;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+        }
+        .back-button:hover {
+            background-color: var(--secondary-color);
+        }
+        h2 {
+            font-size: 1.2rem;
+            color: #ffff66;
+            font-family: monospace;
+            background: none;
+            margin-top: 0.5rem;
+        }
+        .modal-overlay {
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            transform: translateY(100%);
+            opacity: 0;
+            pointer-events: none;
+            transition:
+                transform 0.8s ease,
+                opacity 0.8s ease;
+            overflow: hidden;
+            z-index: 999;
+            align-items: flex-start;
+            padding-top: 50px;
+        }
+        .modal-overlay.open {
+            transform: translateY(0);
+            opacity: 1;
+            pointer-events: auto;
+        }
+        .modal-content {
+            position: relative;
+            background: var(--background-color);
+            padding: 20px;
+            max-width: 600px;
+            width: 90%;
+            max-height: 80vh;
+            margin: 0 auto;
+            border-radius: var(--border-radius);
+            box-shadow: 0 0 6px var(--primary-color);
+            overflow-y: auto;
+            box-sizing: border-box;
+        }
+        .modal-close-bar {
+            width: 50px;
+            height: 4px;
+            background-color: #333;
+            margin: 0 auto 10px;
+            cursor: pointer;
+            border-radius: 2px;
+        }
+        .modal-close-bar:hover {
+            background-color: #fffb00;
+        }
+        .social-icons {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .social-icons a {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: #ffcc00;
+            font-size: 18px;
+            transition: color var(--transition);
+        }
+        .social-icons a:hover {
+            color: #0011ff;
+        }
+        .crypto-box {
+            border: 2px solid rgb(255, 217, 0);
+            padding: 10px;
+            border-radius: 4px;
+            display: inline-block;
+            background-color: rgba(255, 215, 0, 0.1);
+            word-break: break-word;
+        }
+        .seo-wrapper {
+            margin-top: 150px;
+            padding-bottom: 60px;
+            min-height: 400px;
+            box-sizing: border-box;
+        }
+        .seo-description {
+            background-color: #1a1a1a;
+            padding: 40px 20px;
+            margin-top: 150px;
+            border-top: 1px solid var(--primary-color);
+            color: #ddd;
+            font-family: var(--font-family, sans-serif);
+            line-height: 1.6;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: var(--border-radius);
+            box-shadow: 0 0 8px rgba(255, 215, 0, 0.2);
+        }
+        .seo-description h3,
+        .seo-description h4 {
+            color: #ffcc00;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 22px;
+        }
+        .seo-description p {
+            margin-bottom: 16px;
+            font-size: 16px;
+        }
+        .seo-description .crypto-box {
+            margin-top: 10px;
+        }
+        .seo-description .social-icons {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .seo-description .social-icons a {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: #ffcc00;
+            font-size: 18px;
+            transition: color var(--transition);
+        }
+        .seo-description .social-icons a:hover {
+            color: #0011ff;
+        }
+        .footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 20px;
+            font-size: 14px;
+        }
+        .footer-left {
+            position: fixed;
+            left: 15px;
+            bottom: 10px;
+        }
+        .footer-center {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            font-size: 13px;
+            color: #ffcc00;
+            padding: 6px 10px;
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 5px;
+            max-width: 95vw;
+            z-index: 999;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        @media (max-width: 768px) {
+            .App {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.5rem;
+            }
+            .big-letter {
+                font-size: 3rem;
+            }
+            .crypto-box {
+                display: block;
+                width: 100%;
+                box-sizing: border-box;
+            }
+            input[type="text"] {
+                width: 90%;
+                margin: 0 auto;
+            }
+            button {
+                width: auto;
+                padding: 10px 15px;
+            }
+            .footer {
+                font-size: 12px;
+            }
+            .modal-content {
+                width: 90%;
+                padding: 15px;
+                max-height: 80vh;
+            }
+            .social-icons a {
+                font-size: 16px;
+            }
+            .result {
+                padding: 10px;
+                font-size: 0.95rem;
+                overflow-wrap: anywhere;
+            }
+            .result h2 {
+                font-size: 1.2rem;
+            }
+            .result h4 {
+                font-size: 1rem;
+            }
+            .result a {
+                font-size: 0.95rem;
+                display: block;
+                word-break: break-word;
+            }
+            .footer-center {
+                left: 50%;
+                right: auto;
+                transform: translateX(-50%);
+                bottom: 8px;
+                text-align: center;
+                white-space: normal;
+                max-width: 90vw;
+            }
+        }
+        @media (max-width: 480px) {
+            .App {
+                padding: 10px;
+            }
+            .crypto-box {
+                display: block;
+                width: 100%;
+                box-sizing: border-box;
+            }
+            h1 {
+                font-size: 1.2rem;
+            }
+            .big-letter {
+                font-size: 2.5rem;
+            }
+            input[type="text"] {
+                width: 95%;
+                padding: 6px;
+                margin: 0 auto;
+            }
+            button {
+                width: auto;
+                padding: 8px 12px;
+            }
+            .result {
+                padding: 8px;
+            }
+            .modal-content {
+                width: 90%;
+                padding: 12px;
+                max-height: 70vh;
+            }
+            .footer {
+                font-size: 10px;
+            }
+            .footer-left,
+            .footer-center {
+                font-size: 10px;
+            }
+            .social-icons a {
+                font-size: 14px;
+            }
+        }
+    </style>
+    <title>Crawrix</title>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MHWFS9QR" height="0" width="0"
+            style="display: none; visibility: hidden"></iframe></noscript>
+</body>-->
