@@ -157,13 +157,13 @@ against, such Contributor by reason of your accepting any such warranty or
 additional liability.
 
 ==================================================================
-# Human-readable summary (non-legal):
+Human-readable summary (non-legal):
 
-You **CANNOT**:
+You CANNOT:
 - Sell this software or include it in commercial products or SaaS.
 - Use it in any project that generates revenue.
 
-You **CAN**:
+You CAN:
 - Use for personal, educational, research, or internal non-commercial projects.
 - Fork, modify, and share non-commercial versions.
 - Learn from the code, contribute, or report issues.
